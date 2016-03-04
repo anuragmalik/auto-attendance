@@ -1,0 +1,29 @@
+html {
+	background: #224
+}
+
+body {
+	margin: 0px 0 15px 0;
+	padding: 0;
+	text-align: center;
+	font-size: small;
+	font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif
+}
+
+#container {
+	text-align: left;
+	background: #220;
+	border: 10px solid #fff;
+}
+
+#container {
+	margin: 0 auto 10px auto;
+	width: 900px;
+	padding-top: 20px;
+}
+
+form.formatA {
+	margin: 20px 14px 0 14px;
+	padding: 0 0 20px 0;
+	position: relative
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Echelon - Homepage</title>
+
+
+<!-- Meta Tags -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+<!-- JavaScript -->
+<script type="text/javascript" src="Extra_Files/jquery-1.3.2.min.js">
+
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#server").hide();
+$("#database").hide();
+
+
+$("#oide").live('click',function(){
+	$("#server").hide();
+     $("#database").hide();
+	$("#ide").slideDown();
+});
+$("#oserver").live('click',function(){
+	$("#server").slideDown();
+	$("#database").hide();
+     $("#ide").hide();
+});
+$("#odatabase").live('click',function(){
+	$("#database").slideDown();
+	$("#server").hide();
+     $("#ide").hide();
+});
+
+});
+
+</script>
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="Extra_Files/css/structure.css" type="text/css" />
+<link rel="stylesheet" href="Extra_Files/css/form.css" type="text/css" />
+<link rel="stylesheet" href="Extra_Files/css/theme.css" type="text/css" />
+<link
+	href='http://fonts.googleapis.com/css?family=Julius+Sans+One|Quantico|Ruthie|Shojumaru'
+	rel='stylesheet' type='text/css' />
+
+</head>
+<body id="public">
+	<div id="container">
+		<div style="width: 100%" align="center">
+			<img align="center" src="Extra_Files/images/project_name.png" />
+		</div>
+		<form class="formatA">
+<h2> Pre-Requisites : </h2> In order to run and use this project you need to take care of following points and contitions.
+<br><b>Technologies</b> required : The development machine should contain Java JDK Version 1.7.0 or above.
+<br><b>Tools</b> to be installed : <br>
+Install Eclipse IDE for development environment. Version - Indigo or above.<br>
+Install IBM Web Sphere Application Server. Version - 3 or above<br>
+Install IBM DB2 Database Community Edition. Version - 9.0 or above.<br>
+
+Further following plugins can be downloaded from Eclipse Market Place and used for ease of development and UML modelling -
+<br>WASCE Application Server Plugin v3.0 or above.<br>
+Object Aid UML Modelling Tool<br> 
+
+<b>Note</b> : Make sure that classpath settings are done for Java Virtual Machine and WASCE Application Server as well. Further for the purpose of efficiency, developer may create a database pool for interaction between IBM DB2 & WASCE.
+<h2> Please select an option from below : </h2>
+				<table width="60%" align="center">
+					<tr>
+						<th bgcolor="#388E8E" id="oide" width="">Project Development Environmet - Eclipse IDE
+							</th></tr><tr>
+						<th bgcolor="#C67171" id="oserver" width="">WASCE - Application Server</th>
+					</tr>
+
+<tr>
+						<th bgcolor="#71C671" id="odatabase" width="">Database - IBM DB2</th>
+					</tr>				</table>
+
+				<div id="ide">
+					<div id="btHead" class="info">
+						<h2>Project Development Environment : </h2>
+					</div>
+					<div id="dide" class="post">
+
+						<h3 class="heading">Steps to import the existing project into workspace of Eclipse IDE are as follows:</h3>
+1.	From the main menu bar, select <b>File > Import</b>. The Import wizard opens.<br>
+2.	Collapse or click + in <b>General > Existing Project into Workspace</b> and click <b>Next.</b><br>
+3.	Choose either <b>Select root directory</b> or<b> Select archive file</b> and click the associated <b>Browse</b> to locate the directory or file containing the projects i.e. Select <b>EchWebsite</b> folder from the Source Code folder in the CD provided along with the project report.  </br>
+4.	Under <b>Projects</b> select the project or projects which you would like to import.<br>
+5.	Click <b>Finish</b> to start the import.<br>
+
+					</div>
+</div>
+
+<div id="server">
+					<div id="serv" class="info">
+						<h2>Setting Application Server : </h2>
+					</div>
+					<div id="dserver" class="post">
+
+						<h3 class="heading">Steps for setting up a server in Eclipse IDE are as follws:</h3>
+1. Right click on project folder in your Eclipse project explorer.<br>
+2.Select <b>"Run As > Run Configurations"</b> option in the menu.<br>
+3. On the new window, select <b>"IBM WASCE"</b> amongst several other options.<br>
+4. Now, select <b> Server </b> tab from above options and use drop down menu to select the required application server. for example we have used - <b>"IBM WASCE v3.0 server at localhost</b><br>
+5. You may now simply use- <b> "Run as > Run on Server"</b> option to run the dynamic web project on application server.<br>
+					</div>
+</div>
+
+<div id="database">
+					<div id="datab" class="info">
+						<h2>Setting up database : </h2>
+					</div>
+					<div id="ddb" class="post">
+
+						<h3 class="heading">Steps to import the existing tables into an existing databse instance of IBM DB2 are as follows:</h3>
+1.	From the Start menu, select <b>IBM DB2 > DB2Copy(Default)</b><br>
+2.	Open <b>Command Line Tools</b> and click <b>Command Line Processor</b><br>
+3.	On the Command Line Window, type - connect <<b>your database name</b>></br>
+4.	After Successfull connection with the database, you can use the database tables provided by us to create a similar instance of your database. <br> For this import each of the tables provided in CD in <b>"Source code > Database"</b> into your databse using following command - <br> <b>import from 'filename' of ixf CREATE into table_name</b><br>
+
+					</div>
+
+</div>
+</form>	
+	</div>
+
+</body>
+</html>

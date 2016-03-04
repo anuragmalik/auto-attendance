@@ -1,0 +1,51 @@
+#accordion {
+	list-style: none;
+	padding: 0 0 0 0;
+	width: 100%;
+}
+
+#accordion li {
+	width: 98%;
+	display: block;
+	background-color: #B5B5B5;
+	font-weight: bold;
+	margin: 1px;
+	cursor: pointer;
+	padding: 5 5 5 7px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#accordion ul {
+	width: 100%;
+	list-style: none;
+	padding: 0 0 0 0;
+	display: none;
+	height: 320px;
+	overflow: scroll;
+}
+
+#accordion ul li {
+	width: 96%;
+	font-weight: normal;
+	cursor: auto;
+	background-color: #fff;
+	padding: 0 0 0 7px;
+}
+
+#accordion a {
+	text-decoration: none;
+}
+
+#accordion a:hover {
+	text-decoration: underline;
+}
+
+#accordion li:hover {
+	background-color: #8C8C8C;
+}
+
+#accordion ul li:hover {
+	background-color: #fff;
+}

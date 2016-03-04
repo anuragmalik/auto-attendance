@@ -1,0 +1,76 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<title>EIT-Search User</title>
+
+
+<!-- Meta Tags -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="css/structure.css" type="text/css" />
+<link rel="stylesheet" href="css/form.css" type="text/css" />
+<link rel="stylesheet" href="css/theme.css" type="text/css" />
+<link rel="stylesheet" href="css/header.css" type="text/css">
+	<link rel="stylesheet" href="css/mytable.css" type="text/css">
+
+
+		<!-- JavaScript -->
+
+		<script type="text/javascript" src="scripts/anurag.js"></script>
+		<script type="text/javascript" src="scripts/menu.js"></script>
+		<script type="text/javascript" src="scripts/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="scripts/getter.js"></script>
+		<script type="text/javascript" src="scripts/fullPro.js"></script>
+
+		<link
+			href='http://fonts.googleapis.com/css?family=Julius+Sans+One|Quantico|Ruthie|Shojumaru'
+			rel='stylesheet' type='text/css'>
+</head>
+<jsp:include page="Header.jsp" />
+
+<body id="public">
+	<div id="container">
+
+		<form id="updForm" class="formatA" action="GotoUpdate" method="post">
+			<div class="info">
+				<h2>Search User</h2>
+			</div>
+			<ul>
+				<table width="100%">
+					<tr>
+						<th colspan="2" bgcolor="#c0c0c0">Enter Name Or UID below :</th>
+					</tr>
+
+					<tr>
+						<td colspan="2"><label>Search by :</label> <input name="what"
+							type="radio" value="Name" checked="checked" /> NAME <input
+							name="what" type="radio" value="Uid" /> UID</td>
+					</tr>
+					<tr>
+						<td colspan="2"><input id="name"
+							onkeyup="showState(this.value)" class="field text medium"
+							type="text" maxlength="255" placeholder="Example Name Or UID"
+							value="" /></td>
+						<input name="hidUid" id="hUid" type="hidden" value="" />
+					</tr>
+					<tr>
+						<td><div id="disp" style="width: 50%"></div></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="prof" colspan="2">
+							<div id="prodisp"></div>
+						</td>
+					</tr>
+				</table>
+			</ul>
+		</form>
+	</div>
+</body>
+</html>

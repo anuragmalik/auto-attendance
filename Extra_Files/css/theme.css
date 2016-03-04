@@ -1,0 +1,155 @@
+/* ----- Backgrounds ----- */
+html {
+	background-color: #ffffff;
+}
+
+#logo {
+	background-image: none;
+	background-color: #ffffff;
+}
+
+#container,html.embed {
+	background-color: #ffffff;
+	background-image: url("../images/backTex.png");
+}
+
+.formatA li.focused {
+	background-color: #87cefa;
+}
+
+.formatA .instruct {
+	background-color: #ffffff;
+}
+
+/* ----- Borders ----- */
+#container {
+	border: 2px solid #00b2ee;
+}
+
+.formatA .info {
+	border-bottom: 0px dotted #00b2ee;
+}
+
+.formatA .section h3 {
+	border-top: 2px dotted #00b2ee;
+}
+
+.formatA .instruct {
+	border: 2px dotted #ee0000;
+}
+
+#panelB {
+	background-colour: #ffffff;
+	border: 1px dotted #000;
+}
+
+#panelSb {
+	background-colour: #ffffff;
+	border-right: 2px dotted #00b2ee;
+	border-top: 2px dotted #00b2ee;
+}
+
+/* ----- Typography ----- */
+.formatA .info h2 {
+	font-size: 400%;
+	font-family: 'Ruthie', cursive;
+	font-style: bold;
+	font-weight: 400;
+	color: #000000;
+}
+
+.formatA .info div {
+	font-size: 110%;
+	font-family: 'Tahoma', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color: #000000;
+}
+
+.formatA .section h3 {
+	font-size: 100%;
+	font-family: 'Julius sans one', sans-serif;
+	font-style: bold;
+	font-weight: 800;
+	color: #000000;
+}
+
+.formatA .section div {
+	font-size: 100%;
+	font-family: 'Tahoma', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	color: #444444;
+}
+
+.formatA label.desc {
+	font-size: 95%;
+	font-family: 'Julius sans one', sans-serif;
+	font-style: bold;
+	font-weight: 800;
+	color: #000000;
+}
+
+.formatA label.choice {
+	font-size: 100%;
+	font-family: inherit;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+}
+
+.formatA input.text,.formatA textarea.textarea,.formatA input.file,.formatA select.select
+	{
+	font-style: normal;
+	font-weight: normal;
+	color: #333333;
+	font-size: 100%;
+}
+
+{
+*
+ 
+Custom
+ 
+Fonts
+ 
+Break
+ 
+Dropdown
+ 
+Selection
+ 
+in
+ 
+IE
+ 
+*
+}
+.formatA input.text,.formatA textarea.textarea,.formatA input.file {
+	font-family: inherit;
+}
+
+.formatA li div,.formatA li span,.formatA li div label,.formatA li span label
+	{
+	font-family: inherit;
+	color: #000000;
+}
+
+.formatA .instruct small {
+	font-size: 50%;
+	font-family: inherit;
+	font-style: normal;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+/* ----- Button Styles ----- */
+.formatA input.btTxt {
+	
+}
+
+/* ----- Highlight Styles ----- */
+.formatA li.focused label.desc,.formatA li.focused legend.desc,.formatA li.focused div,.formatA li.focused span,.formatA li.focused div label,.formatA li.focused span label,.safari .formatA li.focused input.file
+	{
+	color: #FFFFFF;
+}

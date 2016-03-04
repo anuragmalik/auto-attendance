@@ -1,0 +1,39 @@
+.tabLinks {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	border: 0px dotted #000;
+}
+
+.tabLinks table {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.tabLinks tr td {
+	background-color: #c0c0c0;
+}
+
+.tabLinks tr td div {
+	height: 100%;
+	width: 100%;
+}
+
+.tabLinks a:link {
+	color: inherit;
+}
+
+.tabLinks tr td:hover {
+	background-color: #00868b;
+}
+
+.tabLinks td {
+	vertical-align: middle;
+	text-align: center;
+	padding: 3px;
+	font-size: 15px;
+	font-family: Tahoma;
+	font-weight: normal;
+}
